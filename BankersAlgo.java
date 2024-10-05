@@ -10,8 +10,8 @@ public class BankersAlgorithm {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean tryAgain = true; // Initialize tryAgain to true
-        System.out.println("Banker's Algorithhm");
         do {
+            System.out.println("Banker's Algorithhm");
             System.out.print("Enter the number of processes (4 to 6): ");
             processes = scanner.nextInt();
 
