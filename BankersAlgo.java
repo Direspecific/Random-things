@@ -10,7 +10,7 @@ public class BankersAlgorithm {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean tryAgain = true; // Initialize tryAgain to true
-
+        System.out.println("Banker's Algorithhm");
         do {
             System.out.print("Enter the number of processes (4 to 6): ");
             processes = scanner.nextInt();
@@ -74,6 +74,16 @@ public class BankersAlgorithm {
             System.out.print("P" + i + "\t");
             for (int j = 0; j < resources; j++) {
                 System.out.print(allocation[i][j] + "\t");
+            }
+            System.out.println();
+        }
+
+        System.out.println("\nMax Need Matrix:");
+        System.out.println("Process\tA\tB\tC");
+        for (int i = 0; i < processes; i++) {
+            System.out.print("P" + i + "\t");
+            for (int j = 0; j < resources; j++) {
+                System.out.print(max[i][j] + "\t");
             }
             System.out.println();
         }
